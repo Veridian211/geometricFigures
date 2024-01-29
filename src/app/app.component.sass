@@ -1,0 +1,62 @@
+.form-auswahl
+  display: flex
+  justify-content: space-between
+  padding: 20px
+  padding-left: 50px
+  padding-right: 50px
+
+.form-ansicht
+  display: flex
+  justify-content: center
+
+  .rechteck
+    width: 150px
+    height: 75px
+    background-color: #14c753
+
+  .dreieck
+    width: 0
+    height: 0
+    border-left: 50px solid transparent
+    border-right: 50px solid transparent
+    border-bottom: 100px solid #d5ef2f
+
+  .kreis
+    width: 100px
+    height: 100px
+    border-radius: 50%
+    background-color: #f13a3a
+
+.groessen-eingabe
+  display: flex
+  flex-flow: column
+  padding: 0 30px 0 unset
+
+.footer
+  font-size: 1rem
+  padding-top: 20px
+
+.berechnungsgroesse
+  display: flex
+  flex-flow: column
+  gap: 10px
+  border: 1px solid #dbdbdb
+  padding: 20px
+  padding-right: 35px
+  border-radius: 20px
+
+.eingabe-loeschen
+  background-color: #ffffff
+  border: none
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2)
+  padding: 10px
+  border-radius: 10px
+  font-size: 1rem
+.eingabe-loeschen:hover
+  background-color: #f5f5f5
+.eingabe-loeschen:active
+  background-color: #e6e6e6
+
+:host ::ng-deep .mdc-text-field--filled
+  border-top-left-radius: 10px
+  border-top-right-radius: 10px

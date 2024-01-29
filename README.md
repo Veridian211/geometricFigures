@@ -1,27 +1,28 @@
-# GeometricFigures
+# GeometricFigures Setup
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.0.8.
+1. NodeJS mit NPM herunterladen und installieren
 
-## Development server
+    https://nodejs.org/dist/v20.11.0/node-v20.11.0-x86.msi
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+2. Angular-CLI-Paket installieren
+  In Kommandozeile folgenden Befehl ausführen (benötigt eventuell Adminrechte):
+  
+    npm install -g @angular/cli@17.1.0
 
-## Code scaffolding
+3.  Installation überprüfen:
+    
+    ng --version
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+4. Projekt-Dependencies installieren
+  Im Projektverzeichnis (auf Ebene der package.json) folgenden Befehl ausführen:
+  
+    npm install
 
-## Build
+5. Projekt serven
+  Im Projektverzeichnis folgenden Befehl ausführen (startet den Webserver):
+  
+    ng serve
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+6. Seite im Browser aufrufen
+  
+    http://localhost:4200
