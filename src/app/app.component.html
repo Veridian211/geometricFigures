@@ -32,8 +32,8 @@
             matInput
             type="number"
             formControlName="wertA"
-            [value]="a()"
-            (change)="aktualisiereWertA($event)"
+            [(ngModel)]="a"
+            (change)="berechnen()"
           >
           @if (
             groessenEingabeForm.controls["wertA"].hasError("wertGroesserGleichNull")
@@ -51,8 +51,8 @@
             matInput
             type="number"
             formControlName="wertB"
-            [value]="b()"
-            (change)="aktualisiereWertB($event)"
+            [(ngModel)]="b"
+            (change)="berechnen()"
           >
           @if (
             groessenEingabeForm.controls["wertB"].hasError("wertGroesserGleichNull")
@@ -72,8 +72,8 @@
             matInput
             type="number"
             formControlName="wertC"
-            [value]="c()"
-            (change)="aktualisiereWertC($event)"
+            [(ngModel)]="c"
+            (change)="berechnen()"
           >
           @if (
             groessenEingabeForm.controls["wertC"].hasError("wertGroesserGleichNull")
@@ -96,8 +96,8 @@
             matInput
             type="number"
             formControlName="wertR"
-            [value]="r()"
-            (change)="aktualisiereWertR($event)"
+            [(ngModel)]="r"
+            (change)="berechnen()"
           >
           @if (
             groessenEingabeForm.controls["wertR"].hasError("wertGroesserGleichNull")
@@ -136,10 +136,10 @@
 
     <form class="col-4 ergebnis">
       @if (ausgewaehlteBerechnungsGroesse() === BerechnungsGroesse.FLAECHE) {
-        <span>Flächeninhalt: {{flaecheninhalt()}}</span>
+        <span>Flächeninhalt: {{flaecheninhalt}}</span>
       }
       @if (ausgewaehlteBerechnungsGroesse() === BerechnungsGroesse.UMFANG) {
-        <span>Umfang: {{umfang()}}</span>
+        <span>Umfang: {{umfang}}</span>
       }
     </form>
 
